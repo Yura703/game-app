@@ -33,17 +33,20 @@ body {
 }
 
 .note {
-  background-image: url('../public/note.svg');
+  background-image: url('../public/note-red.svg');
   background-size: 100% 100%;
 }
 
 .note-up {
-  
+  position: relative;
   z-index: 5;
 }
 
 button {
   cursor: pointer;
+  z-index: 10;
+  position:static;
+  
 }
 
 .flex-center {
