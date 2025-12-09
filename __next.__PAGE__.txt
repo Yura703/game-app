@@ -3,7 +3,7 @@
 3:I[40668,["/game-app/_next/static/chunks/ac0b110f591f2c61.js"],"default"]
 6:I[90703,["/game-app/_next/static/chunks/ff7bf889e55c48ba.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"dOPqjn4qbpyuJF7RR_fDh","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/game-app/_next/static/chunks/ac0b110f591f2c61.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"pTHylnG-6QkkPTcmbFrCi","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/game-app/_next/static/chunks/ac0b110f591f2c61.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null

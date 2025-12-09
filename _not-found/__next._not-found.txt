@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[61728,["/game-app/_next/static/chunks/ff7bf889e55c48ba.js"],"default"]
 3:I[89942,["/game-app/_next/static/chunks/ff7bf889e55c48ba.js"],"default"]
-0:{"buildId":"dOPqjn4qbpyuJF7RR_fDh","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"pTHylnG-6QkkPTcmbFrCi","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
