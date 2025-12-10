@@ -2,15 +2,19 @@
 
 import { useState } from 'react';
 
+import { NoteSvg } from './components/NoteSvg';
+
 export default function Home() {
   const [activeNote, setActiveNote] = useState<string>('');
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [teamScores, setTeamScores] = useState([0, 0, 0, 0]);
+  const [isActiveBtn, setIsActiveBtn] = useState<boolean[]>([true, true, true, true, true, true, true]);
 
     // Функция для открытия попапа
-  const handleNoteClick = (noteName: string, noteSymbol: string) => {
+  const handleNoteClick = (noteName: string, noteSymbol: string, index: number) => {
     setActiveNote(noteName);
     setIsPopupOpen(true);
+    setIsActiveBtn(isActiveBtn.map((item, i) => i === index ? !item : item));
   };
 
   // Функция для закрытия попапа
@@ -91,7 +95,9 @@ export default function Home() {
               <div className='w-1/8'></div>
               <div className='w-1/8'>
                 <button className='note w-[100%] h-[100%] note-up mt-8'
-                  onClick={() => handleNoteClick('ЛЯ1', 'ля1')}>
+                  disabled={!isActiveBtn[6]}                
+                  onClick={() => handleNoteClick('СИ', 'СИ', 6)}>
+                    <NoteSvg color={"#8000FF"} className="w-full h-full" />
                 </button>
               </div>
             </div>
@@ -103,11 +109,15 @@ export default function Home() {
               <div className='w-1/8'></div>
               <div className='w-1/8'>
                 <button className='note w-[100%] h-[100%] note-up mt-8'
-                  onClick={() => handleNoteClick('ЛЯ2', 'ля2')}>
+                  disabled={!isActiveBtn[4]}                
+                  onClick={() => handleNoteClick('СОЛЬ', 'СОЛЬ', 4)}>
+                    <NoteSvg color={"#00FFFF"} className="w-full h-full" />
                 </button>
               </div>
               <div className='w-1/8'><button className='note w-[100%] h-[100%]'
-                onClick={() => handleNoteClick('ЛЯ2', 'ля2')}>
+                disabled={!isActiveBtn[5]}                
+                onClick={() => handleNoteClick('ЛЯ', 'ЛЯ', 5)}>
+                  <NoteSvg color={"#0000FF"} className="w-full h-full" />
               </button></div>
               <div className='w-1/8'></div>
             </div>
@@ -118,12 +128,16 @@ export default function Home() {
               <div className='w-1/8'></div>
               <div className='w-1/8'>
                 <button className='note w-[100%] h-[100%] note-up mt-8'
-                  onClick={() => handleNoteClick('ЛЯ2', 'ля2')}>
+                  disabled={!isActiveBtn[2]}                
+                  onClick={() => handleNoteClick('МИ', 'МИ', 2)}>
+                     <NoteSvg color={"#FFFF00"} className="w-full h-full" />
                 </button>
               </div>
               <div className='w-1/8'>
                 <button className='note w-[100%] h-[100%]'
-                  onClick={() => handleNoteClick('ЛЯ2', 'ля2')}>
+                  disabled={!isActiveBtn[3]}                
+                  onClick={() => handleNoteClick('ФА', 'ФА', 3)}>
+                    <NoteSvg color={"#00FF00"} className="w-full h-full" />
                 </button>
               </div>
               <div className='w-1/8'></div>
@@ -135,12 +149,16 @@ export default function Home() {
               <div className='w-1/8'></div>
               <div className='w-1/8  border-b-2 border-gray-800'>
                 <button className='note w-[100%] h-[100%] note-up mt-8'
-                  onClick={() => handleNoteClick('ЛЯ2', 'ля2')}>
+                  disabled={!isActiveBtn[0]}                
+                  onClick={() => handleNoteClick('ДО', 'ДО', 0)}>
+                    <NoteSvg color={"#FF0000"} className="w-full h-full" />
                 </button>
               </div>
               <div className='w-1/8'>
-                <button className='note w-[100%] h-[100%]'              
-                  onClick={() => handleNoteClick('ЛЯ2', 'ля2')}>
+                <button className='note active w-[100%] h-[100%]'              
+                  disabled={!isActiveBtn[1]}                
+                  onClick={() => handleNoteClick('РЕ', 'РЕ', 1)}>
+                    <NoteSvg color={"#FF8000"} className="w-full h-full" />
                 </button>
               </div>
               <div className='w-1/8'></div>

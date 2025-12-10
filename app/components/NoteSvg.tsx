@@ -1,24 +1,20 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+// Создаем компонент SVG
+export const NoteSvg = ({ color = 'red', className = '' }) => (
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="128.000000pt" height="128.000000pt" viewBox="0 0 1280.000000 1280.000000"
+ className={className}
  preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.15, written by Peter Selinger 2001-2017
 </metadata>
 
-<!-- Сначала рисуем красный круг, который заполнит всю внутреннюю область -->
 <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
-  <!-- Красный круг, заполняющий всю внутреннюю часть смайлика -->
-  <circle cx="6400" cy="6400" r="6000" fill="red" stroke="none"/>
+  <circle cx="6400" cy="6400" r="6000" fill={color} stroke="none"/>
 </g>
 
-<!-- Затем поверх рисуем все оригинальные контуры -->
 <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
    fill="black" stroke="none">
   
-  <!-- Оригинальные пути остаются желтыми как на картинке -->
   <path d="M6100 12794 c-463 -31 -741 -68 -1090 -145 -865 -191 -1718 -582
 -2430 -1114 -1404 -1050 -2317 -2613 -2529 -4335 -32 -256 -41 -384 -48 -665
 -21 -907 151 -1803 509 -2647 74 -175 262 -548 358 -713 924 -1578 2489 -2696
@@ -33,7 +29,6 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
 1276 1049 1843 156 189 521 553 711 711 598 497 1227 846 1954 1084 652 213
 1385 311 2066 275z"/>
   
-  <!-- Остальные пути остаются без изменений -->
   <path d="M3910 9663 c-426 -45 -829 -225 -1133 -504 l-69 -62 203 -203 203
 -203 55 48 c218 187 454 298 726 341 105 17 326 14 440 -5 255 -42 522 -173
 712 -347 l44 -42 200 200 c110 109 198 204 197 210 -6 23 -169 159 -283 236
@@ -59,3 +54,5 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
 -246z"/>
 </g>
 </svg>
+);
+
